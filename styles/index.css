@@ -10,12 +10,19 @@ body {
 
 header {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: black;
 }
 
+ul {
+    list-style-type: square;
+}
+
+p {
+    text-align: justify;
+}
 .navbar a {
     color: whitesmoke;
     padding: 14px 20px;
@@ -24,17 +31,8 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-#number {
-    color: whitesmoke;
-    border: 5px solid;
-    padding: 3px 0px;
-    margin: 0px;
-    text-align: center;
-    width: 15rem;
+    background-color: whitesmoke;
+    color:black;
 }
 
 .main {
@@ -48,39 +46,74 @@ header {
 }
 
 .column {
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
     width: 20%;
 }
 
 .top {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .footer {
-    background-color: blueviolet;
+    background-color: black;
+    padding: 0px 30px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: stretch;
     width: 25%;
 }
 
 .center {
+    padding: 0px 20px;
+    background-color: whitesmoke;
     width: 75%;
-    background-image: url("content/gachi.gif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .topmenu {
-    background-color: blue;
+    color: whitesmoke;
+    background-color: #333;
+    height: 50%;
 }
 
 .bottommenu {
     background-color: gray;
+    color: whitesmoke;
+    height: 50%;
+}
+
+.photoset {
+    width: 100%;
+    padding: 10px;
+}
+
+.contact {
+    color: whitesmoke;
+}
+
+#number {
+    color: whitesmoke;
+    border: 5px solid;
+    padding: 3px 0px;
+    margin: 0px;
+    text-align: center;
+    width: 15rem;
+}
+
+#phrase {
+    color: whitesmoke;
+    border: 5px solid;
+    padding: 3px 0px;
+    margin: 0px;
+    text-align: center;
+    width:20rem;
 }
