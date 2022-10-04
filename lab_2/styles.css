@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: 80% 20%;
+}
+
+header {
+    display: grid;
+    grid-column: 1/3;
+    padding: 20px;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    background-color: black;
+}
+
+.navbar a {
+    color: whitesmoke;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.phrase {
+    color: whitesmoke;
+    border: 5px solid;
+    padding: 3px 10px 3px 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100%;
+    grid-template-areas:
+    'Topmenu Textarea Textarea'
+    'Bottommenu Textarea Textarea'
+}
+
+aside {
+    background-color: #333;
+}
+
+.photoset {
+    max-width: 100%;
+    padding: 10px;
+}
+
+#label {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.text {
+    grid-area: Textarea;
+    background-color: whitesmoke;
+    padding: 0px 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text > p {
+    text-align: justify;
+}
+
+.text > img {
+    float: right;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.topmenu {
+    grid-area: Topmenu;
+    background-color: #333;
+    color: whitesmoke;
+}
+
+#logo {
+    max-width: 100%;
+}
+
+.bottommenu {
+    grid-area: Bottommenu;
+    background-color: grey;
+    color: whitesmoke;
+}
+
+.heading {
+    margin: 12px 0px;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    background-color: black;
+    color: whitesmoke;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 30px;
+    align-items: center;
+    justify-items: start;
+    max-height: auto;
+}
