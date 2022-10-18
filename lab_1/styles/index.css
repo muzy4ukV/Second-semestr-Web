@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    padding: 20px;
+    padding: 16px;
     justify-content: space-between;
     align-items: center;
     background-color: black;
@@ -23,14 +23,14 @@ ul {
 p {
     text-align: justify;
 }
-.navbar a {
+a {
     color: whitesmoke;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
 }
 
-.navbar a:hover {
+a:hover {
     background-color: whitesmoke;
     color:black;
 }
@@ -54,7 +54,6 @@ p {
 
 .top {
     display: flex;
-    justify-content: space-between;
     height: 100%;
 }
 
@@ -92,7 +91,7 @@ p {
 
 .photoset {
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
 .contact {
@@ -115,4 +114,64 @@ p {
     margin: 0px;
     text-align: center;
     width:20rem;
+}
+
+@media only screen and (max-width: 700px) {
+    a {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 12px 0px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #number {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .leftside {
+        width: 100%;
+        order: 1;
+    }
+
+    .column {
+        width: 100%;
+        order: 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+    #phrase {
+        width: 50%;
+    }
+
 }

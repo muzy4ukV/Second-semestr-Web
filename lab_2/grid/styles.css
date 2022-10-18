@@ -11,7 +11,7 @@ body {
 .layout {
     display: grid;
     min-height: 100%;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 4fr 1fr;
 }
 
 header {
