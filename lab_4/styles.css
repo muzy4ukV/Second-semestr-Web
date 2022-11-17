@@ -158,13 +158,13 @@ footer {
     .block1 {
         width: auto;
         order: 2;
-        height: 318px;
+        min-height: 320px;
     }
     
     .block2 {
         width: auto;
         order: 3;
-        height: 318px;
+        min-height: 320px;
         margin-top: 25px;
     }
 
