@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+ul {
+    list-style-type: square;
+}
+
+p {
+    text-align: justify;
+}
+a {
+    color: whitesmoke;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: whitesmoke;
+    color:black;
+}
+
+.main {
+    display: flex;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    width: 20%;
+}
+
+.top {
+    display: flex;
+    height: 100%;
+}
+
+.footer {
+    background-color: black;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 25%;
+}
+
+.center {
+    padding: 0px 20px;
+    background-color: whitesmoke;
+    width: 75%;
+}
+
+.topmenu {
+    color: whitesmoke;
+    background-color: #333;
+}
+
+.bottommenu {
+    background-color: gray;
+    color: whitesmoke;
+    height: 100%;
+}
+
+.photoset {
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+
+.contact {
+    color: whitesmoke;
+}
+
+#number, #phrase {
+    color: whitesmoke;
+    border: 5px solid;
+    padding: 3px 0px;
+    margin: 0px;
+    text-align: center;
+    width: 20rem;
+}
+
+button {
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+}
+
+.form > button {
+    margin: 5px;
+}
+ 
+.value {
+    width: 50px;
+}
+
+.edit {
+    width: 100%;
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer > .edit, header > .edit {
+    width: auto;
+}
+
+.edit:hover {
+    color: blueviolet;
+}
+
+.texts {
+    min-height: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+    a {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 12px 0px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #number {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .leftside {
+        width: 100%;
+        order: 1;
+    }
+
+    .column {
+        width: 100%;
+        order: 0;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .center {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+    #phrase {
+        width: 50%;
+    }
+
+}
