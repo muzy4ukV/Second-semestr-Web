@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+        <title>Metallica: Головна</title>
+    </head>
+    <body>
+        <header class="head">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про гурт</a>
+            <a href="contacts.html">Учасники гурту</a>
+            <a href="../content/photo.jpg">Кривенко :)</a>
+            <h3 id="number">Треш-метал рулить</h3>
+            <p ondblclick="createForm('head')" class="edit">Редагувати</p>
+        </header>
+        <div class="main">
+            <div class="leftside">
+                <div class="top">
+                    <div class="menu">
+                        <div tabindex="0" class="topmenu">
+                            <img src="../content/metallica_logo.png" style="width: 100%;">
+                            <h3 style="margin:12px; text-align: center;">Топ 3 пісні:</h3>
+                            <ul>
+                                <li>Enter Sandman</li>
+                                <li>Nothing Else Matters</li>
+                                <li>Master Of Puppets</li>
+                            </ul>
+                            <p ondblclick="createForm('topmenu')" class="edit">Редагувати</p>
+                        </div>
+                        <div class="bottommenu">
+                            <h3 style="margin:12px; text-align: center;">Найкращі релізи</h3>
+                            <ol type="1">
+                                <li>Black Album <i>(1991)</i></li>
+                                <li>Master Of Pupprts <i>(1986)</i></li>
+                                <li>...And Justice For All <i>(1988)</i></li>
+                                <li>Ride The Lightning <i>(1984)</i></li>
+                                <li>Hardwired... To Self-Destruct <i>(2016)</i></li>
+                            </ol>
+                            <p ondblclick="createForm('bottommenu')" class="edit">Редагувати</p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <h3>Створити "акордеон", який може редагувати користувач</h3>
+                        <div id="accordion">
+                            <button onclick="createParagraph()">Додати новий елемент</button>
+                            <button onclick="deleteParagraph()">Видалити останній</button>
+                            <br><br>
+                        </div>
+                        <h3>1. Поміняйте місцями контент блоків x та y</h3>
+                        <button onclick="changeText('number', 'phrase')">Змінити місцями</button>
+                        <h3>2. Напишіть функцію, яка обчислює площу кола,
+                            беручи необхідні значення із відповідних змінних у
+                            скрипті, і виводить отриманий результат в кінці
+                            контенту в блоці «3»</h3>
+                        <label for="radius">Введіть значення радіусу: </label>
+                        <input type="number" id="radius" value=0><br><br>
+                        <button onclick="getRadius('radius')">Обрахувати радіус</button>
+                        <h3>3. Напишіть скрипт, який визначає кількість
+                            максимальних чисел із 10 значень, беручи необхідні
+                            значення із відповідної форми в блоці «3», а
+                            отриманий результат виводить за допомогою
+                            діалогового вікна і зберігає в cookies</h3>
+                        <form name="maxValue">
+                            <label for="value">Введіть значення 10 чисел:</label>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <br>
+                            <br>
+                        </form>
+                        <button onclick="getMax('value')">Отримати максимальне значення</button>
+                        <h3>4. Напишіть скрипт, який при настанні події blur змінює колір фону блоку «2» на
+                            вказаний користувачем і зберігає відповідне значення кольору в localStorage
+                            броузера так, щоб при наступному відкриванні веб-сторінки значення кольору
+                            фону блоку «2» встановлювалось із збереженого значення в localStorage.</h3>
+                        <input type="color" id="localColor"><br><br>
+                        <button onclick="saveColor('localColor')">Зберегти колір</button>
+                        <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Біографія</h1>
+                        <p>Гурт Metallica був заснований в Лос-Анджелесі 28 жовтня[11] 1981 року гітаристом та вокалістом Джеймсом Гетфілдом та барабанщиком Ларсом Ульріхом після того, як обидва помістили оголошення про створення гурту у виданні «The Recycler». Однак, як пізніше з'ясувалося з інтерв'ю Рона Макговні журналу «So What!», Джеймса та Ларса познайомив між собою їх спільний друг Гью Таннер, який в той час був соло-гітаристом у гурті Рона і Джеймса Leather Charm. Дует запросив басиста Рона Макговні, знайомого Гетфілда за його попереднього гурту Leather Charm[12], проте на ранніх стадіях існування гурту постійно виникали проблеми з гітаристами, тому вже спочатку їх змінилося кілька: Ллойд Грант, Бред Паркер і Джеф Ворнер[13]. Metallica отримала свою назву, коли Рон Куінтана попросив Ларса Ульріха допомогти йому вибрати назву для свого нового журналу про американських та британських хеві-метал гуртів. Куінтана мав такі варіанти як «Metallica», «Metal Mania» і «Hesse»[13]. Ульріх збагнув, що «Metallica» буде відмінною назвою для гурту та сказав Рону, що така назву навряд чи кому-небудь сподобається.</p>
+                        <img src="../content/james.gif" style="float:right; margin-left: 10px; width: 70%;">
+                        <p>На початку 1982 року Ульріх переконав засновника та власника Metal Blade Records Брайана Слейджела включити пісню «Hit The Lights» у першу компіляцію Metal Massacre[14]. Зневірившись у пошуках постійного лідер-гітариста, Ульріх помістив оголошення в журналі The Recycler[15]. Дейв Мастейн з Ганінгтон Біч, який у той час вже грав у гурті Panic, відповів та зустрівся з учасниками Metallica для прослуховування[15]. Ульріх та Хетфілд були так вражені обладнанням та однією лише розминкою Мастейна, що вони попросили його приєднатися до гурту ще до початку самого прослуховування.</p>
+                        <p>В березні та квітні 1982 року було записано кілька демо, включаючи Hit The Lights, для збірки Metal Massacre і так зване демо Power Metal («Hit The Lights», «The Mechanix», «Jump In The Fire», «Motorbreath»)[16]. Як згодом пояснив Рон, слова Power Metal в назві демо з'явилися за його ініціативою[17]. Йому видалось цікавим додати ці слова на супровідну візитку до демо-касети, що розсилається на фірми грамзапису, оскільки вказівка ​​всього лише назви гурту та телефону здалося йому вкрай неоригінальним[17]. Кілька місяців потому гурт записав повноформатне демо No Life 'til Leather, яке швидко привернуло увагу незалежних розповсюджувачів, traders, які і допомогли отримати її всім, хто цікавиться, фанам[18].</p>
+                        <h3>5. Напишіть скрипт редагування вмісту (текст і HTML) номерних блоків (1..6):</h3>
+                        <p ondblclick="createForm('center')" class="edit">Редагувати</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h3 id="phrase">Бережіть воду - пийте пиво</h3>
+                    <div class="contact">
+                        <h4>Контакти</h4>
+                        <p>+38 (050) 755 91 43</p>
+                        <p>+38 (050) 814 37 55</p>
+                        <p>+38 (050) 033 33 30</p>
+                    </div>
+                    <p ondblclick="createForm('footer')" class="edit">Редагувати</p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 style="text-align:center;color:whitesmoke;">Фотосет</h2>
+                <img src="../content/photo1.jpg" class="photoset">
+                <img src="../content/photo4.jpg" class="photoset">
+                <img src="../content/photo2.jpg" class="photoset">
+                <img src="../content/photo3.jpg" class="photoset">
+                <p ondblclick="createForm('column')" class="edit">Редагувати</p>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
